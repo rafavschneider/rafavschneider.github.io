@@ -5,6 +5,10 @@
     <title>Sample Page</title>
 </head>
 <body>
-    <p>hey</p>
+    <p id="greeting">hey</p>
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById('greeting').innerHTML += " " + currentYear;
+    </script>
 </body>
 </html>
